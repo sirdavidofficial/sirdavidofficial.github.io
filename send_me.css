@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+     font-family: 'Montserrat', cursive;
+}
+:root{
+    --clr: #222327;
+}
+p{
+    margin-bottom: 15px;
+    font-family:  'Comfortaa', cursive;
+    font-size: 1.5rem;
+    line-height: 20px;
+    color: black;
+}
+h1.title{
+    margin-bottom: 10px;
+    color: #002D62;
+    font-family:  'Sacramento', cursive;
+    font-size: 45px;
+    font-weight: bold;
+}
+.btn a{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid black;
+    margin-top: 25px;
+    border-radius: 20px;
+    color: black;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.btn a:hover{
+    background: tomato;
+    color: whitesmoke;
+    border: none;
+}
+
+.main_container{
+    position: relative;
+}
+
+.navbar{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    background: white;
+}
+
+.logo img{
+    width: 150px;
+    
+}
+
+.navigation{
+    position: relative;
+    width: 400px;
+    height: 70px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 80px;
+}
+.navigation ul{
+    display: flex;
+    width: 350px;
+}
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+
+}
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    font-weight: bold;
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: #002D62;
+}
+.navigation ul li:hover a .icon{
+    transform: translateY(-20px);
+
+}
+.navigation ul li a .text{
+    position: absolute;
+    color: var(--clr);
+    font-weight: bold;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+
+}
+
+.navigation ul li:hover a .text{
+    opacity: 1;
+    transform: translateY(10px);
+    color: tomato;
+
+
+}
+
+
+/* Banner image*/
+.banner{
+    background: white;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_content{
+    text-align: center;
+    color: tomato;
+    font-size: 1.3rem;
+}
+
+.banner_content h1{
+      font-family: 'Comfortaa', cursive;
+    text-transform: uppercase;
+    line-height: 45px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+
+.banner_content h1 span{
+    color: #002D62;
+    font-size:35px;
+    font-weight: bold;
+}
+.banner_content p{
+    margin: 15px;
+    font-family:  'Sacramento', cursive;
+    font-weight: 550;
+    font-size: 3rem;
+    line-height: 40px;
+    color: #002D62;
+}
+
+/* about us */
+
+.about{
+    padding: 5% 10%;
+    text-align: center;
+    background-color: rgb(251,206,177);
+}
+.about p{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* services */
+.services {
+    background-color: white;
+    padding: 5% 5%;
+    text-align: center;
+}
+
+.services .title{
+    padding-top: 100px;
+}
+
+
+.cards_wrap{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.cards_wrap .card_item{
+    padding: 15px 25px;
+    width: 33%;
+    
+}
+
+.cards_wrap .card_inner{
+    
+    background: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    padding: 35px 20px;
+    min-width: 225px;
+    min-height: 315px;
+    width: 100%;
+    transition: 0.5s;
+}
+.cards_wrap .card_inner:hover{
+    transform: translateY(-50px);
+    background: tomato;
+    color: whitesmoke;
+
+}
+
+/* card */
+.cards_wrap .card_inner .card_header{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: tomato;
+    padding-bottom: 35px;
+}
+.cards_wrap .card_inner:hover .card_header{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #002D62;
+    padding-bottom: 25px;
+}
+
+.cards_wrap .card_inner .card-details{
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+}
+/* our team */
+.Our_Team{
+    background-color: white;
+    padding: 5% 10%;
+    text-align: center;
+}
+.Our_Team .cards_wrap .card_in{
+    background: transparent;
+    box-shadow: none;
+}
+.Our_Team .card_in img{
+    margin-top: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    
+}
+.card-details h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: tomato;
+    font-size: 18px;
+}
+
+.card-details p{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 30px;
+
+}
+
+/* contact us */
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image:linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(img3.jpg);
+    background-size: cover;
+}
+.contact .content{
+    max-width: 800px;
+    color: white;
+    text-align: center;
+}
+.contact .content h1{
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+}
+ .contact .containerbox{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+}
+.containerbox .contact_info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.containerbox .contact_info .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+
+}
+.containerbox .contact_info .box .icon{
+    width: 55px;
+    height: 55px;
+    font-size: 25px;
+    font-weight: bold;
+    background: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+}
+.containerbox .contact_info .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+}
+.containerbox .contact_info .box .text a{
+    margin: 10px;
+    margin-left: 0px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.Contact_form{
+    width: 40%;
+    padding: 40px;
+    background: whitesmoke;
+}
+.Contact_form h2{
+    font-size: 25px;
+    color: #333;
+    font-weight: bold;
+}
+.Contact_form .input_box{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.Contact_form .input_box input,
+.Contact_form .input_box textarea{
+    width: 100%;
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+    background: whitesmoke;
+}
+.Contact_form .input_box span{
+    position: absolute;
+    left: 0%;
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size: 12px;
+    font-weight: bold;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.Contact_form .input_box input:focus ~ span,
+.Contact_form .input_box input:valid ~ span,
+.Contact_form .input_box textarea:focus ~ span,
+.Contact_form .input_box textarea:focus ~ span
+{
+    color: tomato;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.Contact_form .input_box input[type="submit"]{
+    width: 100px;
+    background: tomato;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+
+
+
+}
+/*footer*/
+footer{
+    background: white;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 40px;
+
+}
+
+.footer-content{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content img{
+    width: 200px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #002D62;
+    font-size: 1.5rem;
+    transition: color .4s ease;
+}
+.socials a:hover{
+    color: tomato;
+    
+}
+.footer-bottom{
+   padding: 20px 0;
+   text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: bold;
+    color: blue;
+}
+
+
+@media screen and (max-width:991px) {
+    .navbar{
+        height: auto;
+        flex-direction: column;
+    }
+    .cards_wrap .card_item{
+        width: 33%;
+    }
+    .contact{
+        padding: 50px;
+    }
+    .containerbox{
+        flex-direction: column;
+    }
+    .containerbox .contact_info,
+    .containerbox .Contact_form
+    {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    .navbar{
+        height: auto;
+        flex-direction: column;
+    }
+    .navigation{
+        margin: 0 20px;
+    }
+    .cards_wrap .card_item{
+        width: 50%;
+    }
+    .card_header{
+        font-size: 16px;
+        height: 60px;
+    }
+    .cards_wrap .card_inner .card-details{
+        font-size: 17px;
+
+    }
+    .contact{
+        padding: 50px;
+    }
+    .containerbox{
+        flex-direction: column;
+    }
+    .containerbox .contact_info,
+    .containerbox .Contact_form
+    {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:568px) {
+    .navbar{
+        height: auto;
+        flex-direction: column;
+    }
+    .navigation{
+        margin: 0 20px;
+    }
+
+    .banner_content{
+        font-size: 1rem;
+    }
+    .about p{
+        font-size: 18px;
+        padding: 5% 0%;
+    }
+    .card_header{
+        font-size: 16px;
+    }
+    
+    .cards_wrap .card_item{
+        display: block;
+        width: 100%;
+    }
+  
+    .cards_wrap .card_inner .card-details{
+        font-size: 20px;
+
+    }
+    .cards_wrap .card_in{
+        display: block;
+        width: 100%;
+    }
+    .cards_wrap .card_inner:hover{
+        transform: translateY(-50px);
+        background: tomato;
+        color: white;
+    
+    }
+    .contact{
+        padding: 50px;
+    }
+    .containerbox{
+        flex-direction: column;
+    }
+    .containerbox .contact_info,
+    .containerbox .Contact_form
+    {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    
+}
+
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
