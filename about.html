@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sendme.com</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <div class="main_container" id="home">
+        <div class="navbar" id="navbar">
+            <div class="logo">
+                <img src="logo1.png" alt="logo">
+            </div>
+            <div class="navigation">
+                <ul id="menu">
+                    <li class="list">
+                        <a class="active" href="index.html">
+                            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="about.html">
+                            <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                            <span class="text">About</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="services.html">
+                            <span class="icon"><ion-icon name="construct-outline"></ion-icon></span>
+                            <span class="text">Services</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="index.html#contact_us">
+                            <span class="icon"><ion-icon name="chatbox-ellipses-outline"></ion-icon></span>
+                            <span class="text">Contact</span>
+                        </a>
+                    </li>
+                    <li class="Our_team">
+                        <a href="index.html#Team">
+                            <span class="icon"><ion-icon name="people-circle-outline"></ion-icon></span>
+                            <span class="text">Our Team</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <h1 class="title">About us</h1>
+        <p>
+            We specialize in errand services
+            Our offering needed to be both flexible and affordable, able to help with even the most complex of assignments.
+            At the same time, we pay attention to details and provide quality. 
+        </p>
+        <p>
+            Experience has shown us how to build real rapport and strong relationships with our clients and we are always prepared to go the extra mile to put a smile on someone’s face.
+        </p>
+
+        <p>
+            Our errand running service is efficient, reliable and tailored to suit each client. 
+            We provide a service that is well suited to both business and domestic customers.
+            Why become stressed, strung out, exhausted and strained when we enable you to claim back that elusive valuable time?
+             Extremely hands-on, we provide our errand running service on both a regular and one-off basis.
+  
+        </p>
+    </div>
+    <div class="about2" id="about2">
+        <h1 class="title">Errand Running</h1>
+        <p>
+            We established the errand running service to help clients with chores and general tasks around the house.
+            You can send us to the market to get your groceries,food stuff, clothings etc. You can send us to get you snack/small chops like sharwama, 
+            pizza, ice cream barbecue etc, from your desired eatery or resturant.
+            We also assist in taking your clothes out for laundry and many more services at affordable prices.
+            The human body like they say "no be firewood" and requires rest when needed' We are here
+            as a brand to offer genuine assistance to persons who desires to get things done but can't as a result of illness
+            or tiredness. All you need to do is "Just Send Me"
+        </p>
+
+        <h1 class="title">Our Goal</h1>
+            <ul class="goal">
+                <li>put smiles on our customers faces with our fast and affordable service</li>
+                <li>Ease stress with our reliable service</li>
+                <li>Make sure you dont miss out despite your busy schedule</li>
+            </ul>
+
+    </div>
+   
+    <footer>
+        <div class="footer-content">
+            <img src="logo.PNG" alt="logo">
+            <ul class="socials">
+                <li><a href="https://web.facebook.com/Sendmedaily-102325562466742/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="https://wa.me/message/P6C4Y375OVQLE1"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-google"></ion-icon></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 Sendme designed by <span>zurutech</span></p>
+        </div>
+    </footer>
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+
+        window.onscroll = function (){
+            if(window.pageYOffset >= menu.offsetTop){
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    
+</body>
+</html>
